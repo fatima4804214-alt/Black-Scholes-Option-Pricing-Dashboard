@@ -1,10 +1,7 @@
 import streamlit as st
-try:
-    import yfinance as yf
-except ImportError:
-    import subprocess, sys
-    subprocess.run([sys.executable, "-m", "pip", "install", "yfinance"], check=True)
-    import yfinance as yf
+
+import yfinance as yf
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
